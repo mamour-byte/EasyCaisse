@@ -33,13 +33,12 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           title: Text(
             [
-              "Accentual",
-              "Menu",
-              "Commands",
-              "Profile",
+              "Acceuil",
+              "Statistique",
+              "Historique",
             ][_currentIndex],
           ),
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.greenAccent,
         ),
         body: [
           const HomePage(),
@@ -51,28 +50,24 @@ class _MyAppState extends State<MyApp> {
           currentIndex: _currentIndex,
           selectedItemColor: const Color(0xff6200ee),
           unselectedItemColor: const Color(0xff757575),
+          backgroundColor: Colors.greenAccent,
           onTap: (i) => setState(() => _currentIndex = i),
           items: [
             /// Home
             SalomonBottomBarItem(
               icon: Icon(Icons.home),
-              title: Text("Home"),
-              selectedColor: Colors.purple,
+              title: Text("Acceuil"),
+              selectedColor: Colors.green,
             ),
             SalomonBottomBarItem(
-              icon: Icon(Icons.menu_book),
-              title: Text("Menu"),
-              selectedColor: Colors.purple,
+              icon: Icon(Icons.area_chart),
+              title: Text("Statistique"),
+              selectedColor: Colors.green,
             ),
             SalomonBottomBarItem(
-              icon: Icon(Icons.shopping_cart),
-              title: Text("Panier"),
-              selectedColor: Colors.purple,
-            ),
-            SalomonBottomBarItem(
-              icon: Icon(Icons.person),
-              title: Text("Profile"),
-              selectedColor: Colors.purple,
+              icon: Icon(Icons.list_alt_outlined),
+              title: Text("Historique"),
+              selectedColor: Colors.green,
             ),
           ],
         ),

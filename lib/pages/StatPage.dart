@@ -10,6 +10,8 @@ class StatPage extends StatefulWidget {
 class _StatPageState extends State<StatPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const Center(
+      child: Text("Hello Stats :) !! "),
+    );
   }
 }
