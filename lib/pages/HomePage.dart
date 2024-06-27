@@ -1,18 +1,15 @@
 import 'package:flutter/material.dart';
 
-
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class HomePgae extends StatefulWidget {
+  const HomePgae({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<HomePgae> createState() => _HomePgaeState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomePgaeState extends State<HomePgae> {
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text('Hello world '),
-    );
+    return const Placeholder();
   }
 }
