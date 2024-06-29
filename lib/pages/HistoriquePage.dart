@@ -11,8 +11,33 @@ class HistoriquePage extends StatefulWidget {
 class _HistoriquePageState extends State<HistoriquePage> {
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text("Hello Historique :) !! "),
+    return const Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            Column(
+              children: [
+                Text("Nom Produit")
+              ],
+            ),
+
+            Column(
+              children: [
+                Text("N Commmande")
+              ],
+            ),
+
+            Column(
+              children: [
+                Text("DateTime")
+              ],
+            ),
+
+            Column(
+              children: [
+                Text("Prix ")
+              ],
+            )
+          ],
     );
   }
 }
